@@ -9,13 +9,13 @@ public class SP9 {
     public static Random random = new Random();
     public static int numTrials = 100;
     public static void main(String[] args) {
-	int n = 10;  int choice = 1 + random.nextInt(4);
+	int n = 80000000;  int choice = 2;
 	if(args.length > 0) { n = Integer.parseInt(args[0]); }
 	if(args.length > 1) { choice = Integer.parseInt(args[1]); }
         int[] arr = new int[n];
         for(int i=0; i<n; i++) {
 	    arr[i] = i;
-	}
+	} 
 	Timer timer = new Timer();
 	switch(choice) {
 	case 1:
@@ -55,8 +55,42 @@ public class SP9 {
     	insertionSort(arr, 0, arr.length-1);
     
     }
+    
+    public static void merge1(int[] arr, int p, int q, int r)
+    {
+    	int m = q-p+1;
+    	int n = r-q;
+    	int L[] = new int[m];
+    	int R[] = new int[n];
+    	System.arraycopy(arr, p, L, 0, m);
+    	System.arraycopy(arr, q+1, R, 0, n);
+    	int i = 0, j = 0;
+    	for(int k = p; k <= r; k++)
+    	{
+    		if(j >= n || (i < m && L[i] <= R[j]))
+    		{
+    			arr[k] = L[i++];
+    		}
+    		else
+    		{
+    			arr[k] = L[j++];
+    		}
+    	}
+    }
+    
+    public static void mergeSort1(int[] arr, int p, int r)
+    {
+    	if(p < r)
+    	{
+    		int q = (p + r)/2;
+    		mergeSort1(arr, p, q);
+    		mergeSort1(arr, q+1, r);
+    		merge1(arr, p, q, r);
+    	}
+    }
 
     public static void mergeSort1(int[] arr) {
+    	mergeSort1(arr, 0, arr.length-1);
     }
 
 
