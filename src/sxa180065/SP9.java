@@ -35,8 +35,25 @@ public class SP9 {
 
 	System.out.println("Choice: " + choice + "\n" + timer);
     }
+    public static void insertionSort(int[] arr, int p, int r)
+    {
+    	for(int i = p+1; i <= r; i++)
+    	{
+    		int temp = arr[i];
+    		int j = i-1;
+    		while(j >= p && temp < arr[j])
+    		{
+    			arr[j+1] = arr[j];
+    			j = j-1;
+    		}
+    		arr[j+1] = temp;
+    	}
+    }
+    
 
     public static void insertionSort(int[] arr) {
+    	insertionSort(arr, 0, arr.length-1);
+    
     }
 
     public static void mergeSort1(int[] arr) {
