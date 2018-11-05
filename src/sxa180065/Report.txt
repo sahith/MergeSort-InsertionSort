@@ -82,9 +82,9 @@ VM Configurations
 
 	MergeSort Take 1
 	================
-	Choice: 3
-    Time: 21615 msec.
-    Memory: 813 MB / 2048 MB.
+	Choice: 2
+    Time: 18615 msec.
+    Memory: 1293 MB / 2048 MB.
 
 	MergeSort Take 2
 	================
@@ -101,15 +101,44 @@ VM Configurations
 
 5. 128M
 
-   Insertion Sort
+    Insertion Sort
    	==============
    	Infinity
 
    	MergeSort Take 1
    	================
+   	Choice: 2
+    Time: 36238 msec.
+    Memory: 1704 MB / 2682 MB.
 
    	MergeSort Take 2
    	================
+    Choice: 3
+    Time: 35972 msec.
+    Memory: 979 MB / 2048 MB.
 
    	MergeSort Take 3
    	================
+   	Choice: 4
+
+6. 256M
+
+    Insertion Sort
+    ==============
+    Infinity
+
+    MergeSort Take 1
+    ================
+    Choice: 2
+    Time: 36238 msec.
+    Memory: 1704 MB / 2682 MB.
+
+    MergeSort Take 2
+    ================
+    Choice: 3
+    Time: 35972 msec.
+    Memory: 979 MB / 2048 MB.
+
+    MergeSort Take 3
+    ================
+    Choice: 4
