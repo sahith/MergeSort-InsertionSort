@@ -1,0 +1,124 @@
+VM Configurations
+ -Xms2g
+ -Xss512m
+
+1. 8M
+
+	Insertion Sort
+	==============
+	Infinity
+
+	MergeSort Take 1
+	================
+	Choice: 2
+	Time: 1814 msec.
+	Memory: 524 MB / 2047 MB.
+
+	MergeSort Take 2
+	================
+	Choice: 3
+	Time: 1481 msec.
+	Memory: 226 MB / 2016 MB.
+
+	MergeSort Take 3
+	================
+	Choice: 4
+	Time: 1577 msec.
+	Memory: 226 MB / 2016 MB.
+
+2. 16M
+
+	Insertion Sort
+	==============
+	Infinity
+
+	MergeSort Take 1
+	================
+	Choice: 2
+	Time: 3799 msec.
+	Memory: 191 MB / 2047 MB.
+
+	MergeSort Take 2
+	================
+	Choice: 3
+	Time: 3239 msec.
+	Memory: 437 MB / 1956 MB.	
+
+	MergeSort Take 3
+	================
+	Choice: 4
+	Time: 3364 msec.
+	Memory: 437 MB / 1956 MB.
+
+3. 32M
+
+	Insertion Sort
+	==============
+	Infinity
+	
+	MergeSort Take 1
+	================
+	Choice: 2
+	Time: 8538 msec.
+	Memory: 519 MB / 2363 MB.
+
+	MergeSort Take 2
+	================
+	Choice: 3
+	Time: 6907 msec.
+	Memory: 502 MB / 2047 MB.	
+
+	MergeSort Take 3
+	================
+	Choice: 4
+	Time: 7447 msec.
+	Memory: 502 MB / 2047 MB.
+
+4. 64M
+
+	Insertion Sort
+	==============
+	Infinity
+
+	MergeSort Take 1
+	================
+	Choice: 2
+    Time: 18615 msec.
+    Memory: 1293 MB / 2048 MB.
+
+	MergeSort Take 2
+	================
+    Choice: 3
+    Time: 14577 msec.
+    Memory: 1240 MB / 2364 MB.
+
+
+	MergeSort Take 3
+	================
+    Choice: 4
+    Time: 15159 msec.
+    Memory: 1240 MB / 2364 MB.
+
+5. 128M
+
+    Insertion Sort
+   	==============
+   	Infinity
+
+   	MergeSort Take 1
+   	================
+   	Choice: 2
+    Time: 36238 msec.
+    Memory: 1704 MB / 2682 MB.
+
+   	MergeSort Take 2
+   	================
+    Choice: 3
+    Time: 35972 msec.
+    Memory: 979 MB / 2048 MB.
+
+   	MergeSort Take 3
+   	================
+   	Choice: 4
+   	Time: 35904 msec.
+   	Memory: 979 MB / 2048 MB.
