@@ -1,5 +1,6 @@
 /** Sample starter code for SP9.
- *  @author
+ * @author Sahith Reddy - sxa180065
+ * @author Nihal Abdulla PT - nxp171730
  */
 
 package sxa180065;
@@ -47,7 +48,14 @@ public class SP9 {
 
 	System.out.println("Choice: " + choice + "\n" + timer);
     }
-    public static void insertionSort(int[] arr, int p, int r) {
+
+	/**
+	 * Runs insertion sort on the given array arr from p to r
+	 * @param arr int[]
+	 * @param p int
+	 * @param r int
+	 */
+	public static void insertionSort(int[] arr, int p, int r) {
     	for(int i = p+1; i <= r; i++) {
     		int temp = arr[i];
     		int j = i-1;
@@ -60,11 +68,23 @@ public class SP9 {
     }
 
 
-    public static void insertionSort(int[] arr) {
+	/**
+	 * runs insertion sort on the given array
+	 * @param arr int[]
+	 */
+	public static void insertionSort(int[] arr) {
     	insertionSort(arr, 0, arr.length-1);
 
     }
 
+	/**
+	 * merge algorithm for merge sort (take 1)
+	 * merge two sorted arrays arr[p...q] and arr[q+1...r]
+	 * @param arr int[]
+	 * @param p int
+	 * @param q int midpoint
+	 * @param r int
+	 */
 	public static void merge1(int[] arr, int p, int q, int r) {
 		int m = q - p + 1;
 		int n = r - q;
@@ -82,6 +102,12 @@ public class SP9 {
 		}
 	}
 
+	/**
+	 * runs merge sort (take 1) algorithm on given array from p to r
+	 * @param arr int[]
+	 * @param p int p
+	 * @param r int r
+	 */
 	public static void mergeSort1(int[] arr, int p, int r) {
 		if (p < r) {
 			int q = (p + r) / 2;
@@ -91,19 +117,30 @@ public class SP9 {
 		}
 	}
 
+	/**
+	 * runs merge sort (take 1) on given array
+	 * @param arr int[]
+	 */
 	public static void mergeSort1(int[] arr) {
 		mergeSort1(arr, 0, arr.length - 1);
 	}
 
 	/**
-	 *
-	 * @param arr
+	 * runs merge sort (take 2) on given array
+	 * @param arr int[]
 	 */
 	public static void mergeSort2(int[] arr) {
 		int[] tempArr = new int[arr.length];
 		mergeSort2(arr, tempArr, 0, arr.length-1);
 	}
 
+	/**
+	 * runs merge sort (take 2) algorithm on given array and temp array from p to r
+	 * @param A int[]
+	 * @param B int []
+	 * @param p int
+	 * @param r int
+	 */
 	public static void mergeSort2(int[] A, int[] B, int p, int r) {
 		if(r-p+1 < 7)
 			insertionSort(A, p, r);
@@ -115,6 +152,15 @@ public class SP9 {
 		}
 	}
 
+	/**
+	 * merge algorithm for merge sort (take 2)
+	 * merge two sorted arrays arr[p...q] and arr[q+1...r]
+	 * @param A int[]
+	 * @param B int[]
+	 * @param p int
+	 * @param q int
+	 * @param r int
+	 */
 	public static void merge2(int[] A, int[] B, int p, int q, int r) {
 		System.arraycopy(A, p, B, p, r-p+1);
 		int i=p, j=q+1;
@@ -126,6 +172,10 @@ public class SP9 {
 		}
 	}
 
+	/**
+	 * runs merge sort (take 3) on given array
+	 * @param arr int[]
+	 */
 	public static void mergeSort3(int[] arr) {
 		int arrLength = arr.length;
 		int[] tempArr = new int[arrLength];
@@ -133,6 +183,13 @@ public class SP9 {
 		mergeSort3(arr, tempArr, 0, arrLength);
 	}
 
+	/**
+	 * runs merge sort (take 3) algorithm on given array and temp array
+	 * @param A int[]
+	 * @param B int[]
+	 * @param left int
+	 * @param n int
+	 */
 	public static void mergeSort3(int[] A, int[] B, int left, int n) {
 		if(n < 4)
 			insertionSort(A, left, left+n-1);
@@ -144,6 +201,15 @@ public class SP9 {
 		}
 	}
 
+	/**
+	 * merge algorithm for merge sort (take 3)
+	 * merge two sorted arrays arr[p...q] and arr[q+1...r]
+	 * @param A int[]
+	 * @param B int[]
+	 * @param p int
+	 * @param q int
+	 * @param r int
+	 */
 	public static void merge3(int[] A, int B[], int p, int q, int r) {
 		int i=p, j=q+1, k=p;
 		while(i<=q && j<=r) {

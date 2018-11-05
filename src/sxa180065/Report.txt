@@ -95,3 +95,21 @@ VM Configurations
 
 	MergeSort Take 3
 	================
+    Choice: 4
+    Time: 15159 msec.
+    Memory: 1240 MB / 2364 MB.
+
+5. 128M
+
+   Insertion Sort
+   	==============
+   	Infinity
+
+   	MergeSort Take 1
+   	================
+
+   	MergeSort Take 2
+   	================
+
+   	MergeSort Take 3
+   	================
